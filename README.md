@@ -13,7 +13,7 @@ This tool allows you to use CSS, classes, and IDs to define and apply styles, bu
 2. Using Terminal.app (or other shell), run `npm install` in the directory to download dependencies.
 3. From the command line, gun `grunt`. This will start everything up so editing the sass files, layouts, and emails will result in the pages getting rendered.
 
-Additional help if you needed: [installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [installing node](https://nodejs.org/en/download/), [installing grunt globally](https://gruntjs.com/getting-started)
+Additional help if you needed: [installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [installing node](https://nodejs.org/en/download/), [installing grunt globally](https://gruntjs.com/getting-started), [Nunjucks templating docs](https://mozilla.github.io/nunjucks/templating.html)
 
 ## Resources
 
