@@ -1,0 +1,125 @@
+/*
+ * Stylesheet
+ * ----------
+ * These styles will be inlined for the actual emails. This stylesheet will only be used
+ * during the development process.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+  color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 12px 0;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+p,
+ul,
+ol {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 10px 0;
+}
+
+.alt-font {
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #296e2b;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0 none;
+  height: 1px;
+  background-color: #999;
+}
+
+.table-listing {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.table-listing thead th {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 2px 10px;
+}
+.table-listing tbody td {
+  padding: 10px;
+}
+.table-listing tfoot td {
+  padding: 10px;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.my_email-wrapper {
+  background-color: #222222;
+  color: #888;
+}
+.my_email-table {
+  width: 600px;
+  margin: 0 auto;
+}
+.my_email-summary {
+  padding: 10px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+.my_email-header-image {
+  padding: 0;
+}
+.my_email-header {
+  padding: 40px 20px;
+  background-color: #379339;
+  color: #fff;
+  text-align: center;
+}
+.my_email-header .heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.my_email-body {
+  padding: 25px 20px;
+  background-color: #fff;
+  color: #555555;
+}
+.my_email-prefooter {
+  padding: 25px 20px;
+  background-color: #ccc;
+  color: #626262;
+}
+.my_email-footer {
+  padding: 10px 20px;
+}
+.my_email-footer a {
+  color: #ddd;
+}

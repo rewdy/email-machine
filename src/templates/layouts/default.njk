@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Email</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="{{namespace}}-wrapper">
+            <table class="{{namespace}}-table" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td class="{{namespace}}-summary">
+                        {% block summary %}{% endblock %}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="{{namespace}}-header-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Wolf-River-swamp-North-Mississippi.jpg" width="600" height="" alt="{{ system_title }}">
+                    </td>
+                </tr>
+                {# <tr>
+                    <td class="{{namespace}}-header">
+                        <span class="heading">{{ system_title }}</span>
+                    </td>
+                </tr> #}
+                <tr>
+                    <td class="{{namespace}}-body">
+                        {% block content %}{% endblock %}
+                    </td>
+                </tr>
+                {# <tr>
+                    <td class="{{namespace}}-prefooter">
+                        <table style="width:100%">
+                            <tr>
+                                <td class="text-center">
+                                    <a href="#">Sign up today!</a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="#">Learn more...</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> #}
+                <tr>
+                    <td class="{{namespace}}-footer">
+                    {% block footer %}
+                        <p class="small">You are receiving this email because you have used the {{system_title}} app.</p>
+                        <p class="small">If you would prefer not to receive these emails, you may <a href="#unsubscribe">unsubscribe</a>.</p>
+                        <hr>
+                        <p class="small text-center">{{system_title}}<br>
+                        1234 56th St &bullet; Cityville, ST 12345<br>
+                        Phone: (800) 555-1234<br>
+                        <a href="#website">www.website.com</a></p>
+                    {% endblock %}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+/*
+ * Stylesheet
+ * ----------
+ * These styles will be inlined for the actual emails. This stylesheet will only be used
+ * during the development process.
+*/
+
+@import 'utilities';
+
+// Vars
+$font-family:'Open Sans', sans-serif;
+$font-family-alt:$font-family;
+$font-size:16px;
+$line-height:(1.5 * $font-size);
+
+$brand-primary: #379339;
+$brand-primary-text: contrasting-text($brand-primary);
+
+$email-background-color:#fff;
+$email-text-color:#555555;
+
+$link-color:darken($brand-primary, 10%);
+
+$line-color:#ddd;
+
+$background-color:#222222;
+$screen:#ccc;
+
+$header-padding:40px 20px;
+$section-padding:25px 20px;
+$slim-section-padding:10px 20px;
+
+body {
+    margin:0;
+    padding:0;
+    background-color:$background-color;
+    color:#888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-alt;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin:0 0 12px 0;
+}
+h1 {
+    font-size:(1.5 * $font-size);
+    line-height:$line-height;
+    margin-bottom:$font-size;
+}
+
+p,
+ul,
+ol {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin:0 0 $font-size 0;
+}
+.small {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 10px 0;
+}
+.alt-font {
+    font-family:$font-family-alt;
+}
+.text-center {
+    text-align:center;
+}
+
+a {
+    color:$link-color;
+    text-decoration:underline;
+}
+
+hr {
+    border:0 none;
+    height:1px;
+    background-color:#999;
+}
+
+.table-listing {
+    width:100%;
+    font-family:$font-family;
+    thead th {
+        text-align:left;
+        border-bottom:1px solid $line-color;
+        font-size:12px;
+        font-weight:normal;
+        text-transform:uppercase;
+        padding:2px 10px;
+    }
+    tbody td {
+        padding:10px;
+    }
+    tfoot td {
+        padding:10px;
+        background-color:#f2f2f2;
+        font-weight:bold;
+    }
+}
+
+.my_email {
+    &-wrapper {
+        background-color:$background-color;
+        color:#888;
+    }
+    &-table {
+        width:600px;
+        margin:0 auto;
+    }
+    &-summary {
+        padding:$slim-section-padding;
+        font-family:$font-family;
+        font-size:12px;
+        line-height:16px;
+    }
+    &-header-image {
+        padding:0;
+    }
+    &-header {
+        padding:$header-padding;
+        background-color:$brand-primary;
+        color:$brand-primary-text;
+        text-align:center;
+        .heading {
+            font-family:$font-family-alt;
+            font-size:24px;
+            font-weight:bold;
+        }
+    }
+    &-body {
+        padding:$section-padding;
+        background-color:$email-background-color;
+        color:$email-text-color;
+    }
+    &-prefooter {
+        padding:$section-padding;
+        background-color:$screen;
+        color:lighten($email-text-color, 5%);
+    }
+    &-footer {
+        padding:$slim-section-padding;
+        a {
+            color:#ddd;
+        }
+    }
+}

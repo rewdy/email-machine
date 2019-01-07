@@ -1,0 +1,25 @@
+{
+  "name": "email-machine",
+  "version": "1.0.0",
+  "description": "A simple setup to build html emails.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-juice": "0.0.2",
+    "grunt-nunjucks-2-html": "^2.2.0",
+    "grunt-prettify": "^0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "email",
+    "html"
+  ],
+  "author": "Andrew Meyer / NIC Federal",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+@function contrasting-text($color) {
+  @if (lightness($color) > 60%) {
+    @return #000; // black for light backgrounds
+  }
+
+  @else {
+    @return #fff; // white for darker backgrounds
+  }
+}

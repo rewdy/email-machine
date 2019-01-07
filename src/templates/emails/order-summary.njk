@@ -1,0 +1,41 @@
+{% extends "default.njk" %}
+
+{% block summary %}We're just reaching out about something...{% endblock %}
+{% block content %}
+<h1>Order Summary</h1>
+<p>Hello FIRST LAST,</p>
+<p>Here is a summary of your recent purchase made on Day, Month, 01, 2001. Your credit card statement will show a charge from ms.gov/MDWFP. Please save or print this e-mail for your records.</p>
+<p>We noticed that you did not set up your licenses to auto-renew at the end of the year. By checking the auto-renewal box during your next purchase, or in your auto-renewal settings, you can insure a secure and hassle-free way to keep your license up-to-date in the continuing future.</p>
+
+<h2>Billing Information</h2>
+<p>First Lastname<br>
+4433 Streetname Dr<br>
+Jackson, MS 39216<br>
+USA</p>
+
+<h2>Payment Details</h2>
+<p>Order ID: 39969662</p>
+
+<h2>Item(s)</h2>
+<table class="table-listing" cellpadding="0" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>NORTH MS NWR PERMIT</td>
+            <td class="text-right">$19.71</td>
+        </tr>
+    <tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td class="text-right">$19.71</td>
+        </tr>
+    </tfoot>
+</table>
+
+{% endblock %}
